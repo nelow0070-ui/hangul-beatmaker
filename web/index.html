@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hangul Beatmaker</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <main class="app">
+      <section class="transport" aria-label="transport">
+        <div>
+          <h1>Hangul Beatmaker</h1>
+          <p>첫 음절은 박자표, 두 번째 음절은 BPM, 나머지는 비트로 재생합니다.</p>
+        </div>
+        <div class="actions">
+          <button id="playButton" type="button">Play</button>
+          <button id="stopButton" type="button">Stop</button>
+        </div>
+      </section>
+
+      <section class="tracks" aria-label="tracks">
+        <label class="track">
+          <span>Track 1</span>
+          <input class="track-input" value="러휴가나다라" autocomplete="off">
+        </label>
+        <label class="track">
+          <span>Track 2</span>
+          <input class="track-input" value="러휴고노도로" autocomplete="off">
+        </label>
+        <label class="track">
+          <span>Track 3</span>
+          <input class="track-input" value="러휴구누두루" autocomplete="off">
+        </label>
+      </section>
+
+      <section class="readout" aria-live="polite">
+        <h2>해석</h2>
+        <div id="status"></div>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
